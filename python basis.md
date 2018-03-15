@@ -28,3 +28,37 @@ print "tup2[1:5]: ", tup2[1:5]
 
 tup1[0]:  physics
 tup2[1:5]:  (2, 3, 4, 5)
+
+
+
+
+
+访问字典里的值
+把相应的键放入熟悉的方括弧，如下实例:
+
+实例
+#!/usr/bin/python
+ 
+dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'};
+ 
+print "dict['Name']: ", dict['Name'];
+print "dict['Age']: ", dict['Age'];
+以上实例输出结果：
+
+dict['Name']:  Zara
+dict['Age']:  7
+如果用字典里没有的键访问数据，会输出错误如下：
+
+实例
+#!/usr/bin/python
+ 
+dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'};
+ 
+print "dict['Alice']: ", dict['Alice'];
+以上实例输出结果：
+
+dict['Alice']: 
+Traceback (most recent call last):
+  File "test.py", line 5, in <module>
+    print "dict['Alice']: ", dict['Alice'];
+KeyError: 'Alice'
